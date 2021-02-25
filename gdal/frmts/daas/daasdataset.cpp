@@ -1092,6 +1092,8 @@ void GDALDAASDataset::ReadRPCs(const CPLJSONObject& oProperties)
             const char* pszJsonName;
             const char* pszGDALName;
         } asRPCSingleValues[] = {
+            { "errBias", RPC_ERR_BIAS},
+            { "errRand", RPC_ERR_RAND},
             { "sampOff", RPC_SAMP_OFF },
             { "lineOff", RPC_LINE_OFF },
             { "latOff",  RPC_LAT_OFF },
